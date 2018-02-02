@@ -1,10 +1,10 @@
 class Show
   def self.apply(bitmap, args)
-    bitmap.display
+    bitmap.display if bitmap
     bitmap
   end
 
   def self.valid?(bitmap, args)
-    !!bitmap
+    true
   end
 end
